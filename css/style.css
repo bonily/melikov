@@ -1,0 +1,738 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/montserratregular.woff2") format("woff2"), url("../montserratregular.woff") format("woff"); }
+
+@font-face {
+  font-family: "TRY Grtsk Tera";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/TRYGrtskTera-SemiboldItalic.woff2") format("woff2"), url("../TRYGrtskTera-SemiboldItalic.woff") format("woff"); }
+
+/* stylelint-disable */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  background-color: #181818;
+  font-family: "Montserrat", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.enter-button {
+  width: 45px;
+  height: 45px;
+  margin-right: 24px;
+  padding: 0;
+  background: url("../img/enter-button.svg") no-repeat center, #FFFE54;
+  border-radius: 50%;
+  border: none; }
+
+.main-page__wrapper {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.about-company {
+  position: relative;
+  z-index: -1;
+  height: 690px;
+  margin-top: -61px;
+  background: url("../img/main_fitness.jpg") no-repeat right; }
+  .about-company::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: url("../img/vector-main-train.svg") no-repeat left rgba(0, 0, 0, 0.3); }
+
+.about-company_tagline {
+  position: absolute;
+  width: 456px;
+  height: 184px;
+  left: 30px;
+  top: 179px;
+  margin: 0;
+  padding: 0;
+  font-family: "TRY Grtsk Tera";
+  font-size: 42px;
+  line-height: 46px;
+  text-transform: uppercase;
+  text-transform: uppercase; }
+
+.about-company__bottomline {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 33px;
+  padding-bottom: 33px; }
+
+.about-company__tag {
+  font-family: "TRY Grtsk Tera";
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 352px;
+  text-transform: uppercase; }
+  .about-company__tag--accent {
+    color: #FFFE54; }
+
+.about-company__button {
+  margin-left: 218px;
+  margin-top: 14px; }
+
+.main-logo {
+  margin: -1px 0 0 31px; }
+
+.main-nav {
+  margin-left: 107px;
+  margin-top: 3px; }
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 37px; }
+
+.main-nav__list li + li {
+  margin-left: 43px; }
+
+.start-button {
+  width: 294px;
+  height: 50px;
+  font-family: "TRY Grtsk Tera";
+  font-size: 13px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-style: normal;
+  background: #FFFE54;
+  border: none;
+  border-radius: 2px; }
+
+.page-header__wrapper {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.page-header__topline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 13px; }
+
+.active__wrapper {
+  padding: 112px 158px 0; }
+
+.active__title {
+  font-family: "TRY Grtsk Tera";
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 47px; }
+
+.active__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.active__photo {
+  position: relative;
+  z-index: -1;
+  margin-bottom: 4px; }
+  .active__photo--fitness::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    width: 40px;
+    height: 24px;
+    background-image: url(../img/icon_fitness.png); }
+  .active__photo--fitness::after {
+    content: "ФИТНЕС";
+    position: absolute;
+    font-family: "TRY Grtsk Tera";
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    z-index: 2;
+    left: 21px;
+    bottom: 32px; }
+  .active__photo--skate::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    width: 34px;
+    height: 29px;
+    background-image: url(../img/icon_skate.svg); }
+  .active__photo--skate::after {
+    content: "РОЛИКИ";
+    position: absolute;
+    font-family: "TRY Grtsk Tera";
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    z-index: 2;
+    left: 21px;
+    bottom: 37px; }
+  .active__photo--summer::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    width: 42px;
+    height: 33px;
+    background-image: url(../img/icon_summer.svg); }
+  .active__photo--summer::after {
+    content: "ЛЫЖЕРОЛЛЕРЫ";
+    position: absolute;
+    font-family: "TRY Grtsk Tera";
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    z-index: 2;
+    left: 21px;
+    bottom: 32px; }
+  .active__photo--skand::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 7px;
+    top: 3px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/icon_skand.svg); }
+  .active__photo--skand::after {
+    content: "СКАНДИНАВСКАЯ ХОДЬБА";
+    position: absolute;
+    font-family: "TRY Grtsk Tera";
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    z-index: 2;
+    left: 21px;
+    bottom: 32px; }
+  .active__photo--ski::before {
+    content: " ";
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 22px;
+    width: 33px;
+    height: 26px;
+    background-image: url(../img/icon_ski.svg); }
+  .active__photo--ski::after {
+    content: "БЕГОВЫЕ ЛЫЖИ";
+    position: absolute;
+    font-family: "TRY Grtsk Tera";
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-style: normal;
+    z-index: 2;
+    left: 21px;
+    bottom: 32px; }
+
+.active__photos img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  opacity: 0.9; }
+
+.news__title {
+  font-family: "TRY Grtsk Tera";
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 103px 158px 0;
+  margin: 0;
+  margin-bottom: 47px; }
+
+.news__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.new-block {
+  max-width: 312px;
+  margin-left: 35px;
+  font-size: 16px;
+  line-height: 24px; }
+
+.tariffs__wrapper {
+  padding: 112px 158px 0; }
+
+.tariffs__title {
+  font-family: "TRY Grtsk Tera";
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 47px; }
+
+.tariffs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.tariffs__activate {
+  width: 100%;
+  height: 170px;
+  padding-top: 75px;
+  padding-left: 60px;
+  font-family: "TRY Grtsk Tera";
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #7AFBBC;
+  background: url("../img/vector-activate.svg") no-repeat -2px, url("../img/activate.jpg") no-repeat right #2D2D2D;
+  border-radius: 2px;
+  border: none; }
+
+.tariff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 308px;
+  height: 368px;
+  padding-top: 19px;
+  padding-left: 16px;
+  margin-bottom: 15px;
+  background: #2D2D2D;
+  border-radius: 2px; }
+  .tariff:hover {
+    background: #FFFE54; }
+    .tariff:hover .tariff__title {
+      color: #181818; }
+    .tariff:hover .tariff__text {
+      color: #181818; }
+    .tariff:hover .tariff__button {
+      text-align: center;
+      background: #181818; }
+
+.tariff__title {
+  font-family: "TRY Grtsk Tera";
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  color: #FFFE54; }
+  .tariff__title--free {
+    color: #7AFBBC; }
+
+.tariff__text {
+  display: block;
+  width: 258px;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px; }
+
+.tariff__button {
+  width: 273px;
+  height: 50px;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: 14px;
+  font-family: "TRY Grtsk Tera";
+  font-size: 13px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #Ffffff;
+  font-style: normal;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); }
